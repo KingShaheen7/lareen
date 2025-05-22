@@ -1,1 +1,75 @@
-hello
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <style>
+        .login-box {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0 0 15px rgba(0, 128, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        .user-box {
+            margin-bottom: 15px;
+        }
+
+        .user-box label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .user-box input {
+            width: 100%;
+            padding: 8px;
+            border-top: 4px solid green;
+            border-right: 4px solid green;
+            border-left: 4px solid green;
+            border-bottom: none;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .user-box input:hover {
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-left-color: transparent;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: box-shadow 0.3s;
+        }
+
+        button:hover {
+            box-shadow: 0 5px 15px rgba(0, 128, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <form>
+        <div class="user-box">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+        </div>
+
+        <div class="user-box">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+</body>
+</html>
